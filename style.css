@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(60,60,60);
+  width: 100%;
+  color: rgb(60,60,60); /* default color of lightgrey */
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-top: 2rem;
+}
+h2 {
+  font-weight: normal;
+}
+.oneandahalfremspace {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.halfremspace {
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* header */
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  }
+header div div {
+  display: flex;
+  align-items: center;
+  color: rgb(160,160,160); /* medium gray */
+  height: 2rem;
+  font-size: 2rem;
+}
+.ic-logo {
+  height: 3rem;
+}
+header span {
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+ul li a {
+  padding-left: 1rem;
+  color: rgb(80, 80, 80);
+  text-decoration: none;
+}
+.ic img {
+  height: 2rem;
+}
+.mobile {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .desktop header {
+    display: none;
+  }
+  /*header div div .mobile {
+    display: block;
+  }*/
+  }
+/* Main Banner */
+.container  {
+  display: flex;
+  background-color: lightgrey;
+  max-width: 100%;
+}
+.bigimage {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+.banner {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+button {
+  width: 80%;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(60, 60, 60);
+  padding: 0.5rem;
+  margin: 1rem;
+  border: none;
+}
+/* Second Banner or Information */
+.container2  {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+}
+.subcontainer {
+  padding: 2rem 1.5rem;
+  max-width: 60%;
+}
+.infoboxes {
+  padding-top: 1rem;
+}
+.infoboxes1 {
+  border-left: 1px solid lightgrey;
+}
+.bigimage2 {
+  width: 100%;
+}
+
+#words {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+#quoteauthor {
+  padding-bottom: 2rem;
+}
+
+.infoboxes {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.orientation {
+  border-bottom: 3px double lightgrey;
+}
+.infobox {
+  display: flex;
+}
+.smallimage {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  height: auto;
+  width: 100%;
+}
+
+.image {
+  width: 35%;
+}
+.infowords {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  width: 65%;
+}
+
+/* Start Learning */
+.container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgrey;
+
+}
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 2rem;
+
+}
+.course {
+  background-color: white;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  width: 25%;
+}
+.course img {
+  width: 100%;
+}
+.courseinfo {
+  color: rgb(80, 80, 80);
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+/* Thesis */
+.container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(240, 240, 240); /*lightgrey*/
+}
+.bigcontainer {
+  display: flex;
+}
+.padme {
+  padding-top: 1rem;
+}
+.infoboxdark {
+  background-color: rgb(160, 160, 160);
+}
+.infoboxes2 {
+  padding-top: 2rem;
+}
+#urban {
+  display: block;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+#footernav {
+  padding-left: 1.5rem;
+}
