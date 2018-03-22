@@ -44,6 +44,7 @@ header div div {
 .ic-logo {
   height: 3rem;
 }
+
 header span {
   font-weight: bold;
   color: rgb(80, 80, 80);
@@ -61,26 +62,32 @@ ul li a {
 .ic img {
   height: 2rem;
 }
-.mobile {
+.mobilecontainer1 {
   display: none;
 }
 @media only screen and (max-width: 480px) {
-  .desktop header {
+  .desktop {
     display: none;
   }
-  /*header div div .mobile {
-    display: block;
-  }*/
+  .mobilecontainer1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobilecontainer1 ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
   }
 /* Main Banner */
-.container  {
+.desktopcontainer  {
   display: flex;
   background-color: lightgrey;
-  max-width: 100%;
 }
 .bigimage {
   width: 60%;
   padding: 2rem 1.5rem;
+  align-self: center;
 }
 .banner {
   display: flex;
@@ -96,6 +103,33 @@ button {
   margin: 1rem;
   border: none;
 }
+@media only screen and (max-width: 480px) {
+  .desktopcontainer {
+    display: none;
+  }
+  .mobilecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    background-color: lightgrey; /*lightgrey*/
+  }
+  .bigimage {
+    width: 100%;
+  }
+  button {
+    background-color: rgb(160,160,160); /*medium gray*/
+    margin-bottom: 2rem;
+    margin-top: 0;
+  }
+  .banner {
+    padding-left: 1rem;
+  }
+  h1 {
+    padding-bottom: 2rem;
+  }
+}
+
 /* Second Banner or Information */
 .container2  {
   display: flex;
@@ -141,7 +175,6 @@ button {
   height: auto;
   width: 100%;
 }
-
 .image {
   width: 35%;
 }
@@ -152,7 +185,36 @@ button {
   padding-left: 2rem;
   width: 65%;
 }
-
+.container2mobile {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .container2 {
+    display: none;
+  }
+  .container2mobile {
+    display: flex;
+  }
+  .infoboxes {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+  .infobox {
+    display: flex;
+    flex-direction: column;
+  }
+  .smallimage {
+    width: auto;
+    margin: 0;
+  }
+  .infowords {
+    width: 100%;
+  }
+  .fourremspace {
+    padding-top: 4rem;
+  }
+}
 /* Start Learning */
 .container3 {
   display: flex;
@@ -183,6 +245,31 @@ button {
   color: rgb(80, 80, 80);
   padding: 1rem 1rem 1.5rem 1rem;
 }
+.container3mobile {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .container3 {
+    display: none;
+  }
+  .container3mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    display: flex;
+    padding-bottom: 1rem;
+  }
+  .mobile3 {
+  margin: .5rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+#lastbutton {
+  margin-bottom: 2rem;
+}
+}
 /* Thesis */
 .container4 {
   display: flex;
@@ -207,6 +294,12 @@ button {
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
 }
+
+@media only screen and (max-width: 480px) {
+  .container4 {
+    display: none;
+  }
+}
 /* Footer */
 footer {
   display: flex;
@@ -217,3 +310,15 @@ footer {
 #footernav {
   padding-left: 1.5rem;
 }
+
+.mobilecontainer {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  footer ul {
+    display: none;
+  }
+  footer span {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    }
